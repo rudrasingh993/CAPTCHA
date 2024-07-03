@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Math CAPTCHA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="fireworks-container" id="fireworksContainer">
+        <div class="firework firework1"></div>
+        <div class="firework firework2"></div>
+        <div class="firework firework3"></div>
+        <div class="firework firework4"></div>
+        <div class="firework firework5"></div>
+    </div>
+    <div class="papers-container" id="papersContainer">
+        <div class="paper paper1"></div>
+        <div class="paper paper2"></div>
+        <div class="paper paper3"></div>
+        <div class="paper paper4"></div>
+        <div class="paper paper5"></div>
+    </div>
+    <audio id="successAudio" src="videos/02.mp3"></audio>
+    <div class="captcha-container">
+        <div class="video-container" id="videoContainer">
+            <video id="errorVideo" src="videos/01.mp4"></video>
+        </div>
+        <form id="captchaForm">
+            <h2>Solve This CAPTCHA..</h2>
+            <label for="captcha">
+                <span id="captcha-question"></span>
+            </label>
+            <input type="text" id="captcha-answer" required placeholder="Enter answer">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
